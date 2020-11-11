@@ -1,0 +1,163 @@
+button{
+  outline : none;
+  background : #fff;
+  border : none;
+  cursor : pointer;
+}
+
+.App{
+  margin : 0 3%;
+}
+
+.mainlabel{
+  font-size : 50px;
+  display : inline-block;
+  width : 100%;
+  text-align : center;
+}
+
+.interface1{
+  display : flex;
+  align-items: center;
+  background : rgba(0,0,0,0.1);
+  padding : 20px 30px;
+}
+
+.interface1 label{
+  font-size : 20px;
+}
+
+.interface1 input{
+  height : 24px;
+  margin : 0 20px;
+  padding : 5px;
+  outline : none;
+  border : 0.5px solid;
+}
+
+.interface1 button{
+  font-size : 16px;
+  padding : 10px 20px;
+}
+
+.info1{
+  padding : 20px 30px;
+}
+
+.info1 .info1_main{
+  margin-bottom : 20px;
+}
+
+.info1_main label{
+  font-size : 35px;
+}
+
+.info1_sub label:nth-child(1){
+  font-size : 25px;
+}
+
+.interface2{
+  background : rgba(0,0,0,0.1);
+  padding : 20px 30px;
+}
+
+.interface2 button{
+  font-size : 14px;
+  padding : 7px 20px;
+  margin-right : 20px;
+}
+
+.sub canvas {
+  width : 100% ;
+  margin : 0;
+  padding : 0;
+  border : 0;
+  display : block;
+}
+
+.main{
+  display : flex;
+  flex-direction : row;
+}
+
+.main .issues{
+  background : rgba(61,61,61,0.1);
+  width : 30%;
+  height : 500px;
+  overflow-y : scroll;
+}
+
+.main .issues div{
+  padding : 10px;
+  cursor : pointer;
+  transition : .2s;
+}
+
+.main .issues div:hover{
+  background : rgba(0,0,0,0.15);
+}
+
+.main .issues .checked{
+  background : rgba(0,0,0,0.2);
+}
+
+.main canvas{
+  width : 70% !important;
+  height : 500px !important;
+}
+
+.sub{
+  display : flex;
+  height : 700px;
+  margin-bottom : 200px;
+}
+
+.sub .sub1{
+  box-sizing: border-box;
+  width : 70%;
+  height : 100%;
+}
+
+.sub .newslist{
+  box-sizing: border-box;
+  overflow-y : scroll;
+  height : 100%;
+  margin : 30px 0 ;
+}
+
+.sub .newsblock{
+  width : auto;
+  border : solid 0.5px rgba(0,0,0,0.3);
+  padding : 10px 20px;
+  transition : .3s;
+}
+
+.sub .open{
+  background : rgba(0,0,0,0.05);
+}
+
+.sub .newsblock p{
+  word-break: break-all;
+}
+
+.sub .newstitle{
+  cursor : pointer;
+}
+
+.sub .newstitle:hover{
+  text-decoration : underline;
+}
+
+.sub .newshilight{
+  display : none;
+}
+
+.sub .open .newshilight{
+  display : block;
+}
+
+.sub .sub2{
+  box-sizing: border-box;
+  width : 30%;
+  margin : 20px;
+}
